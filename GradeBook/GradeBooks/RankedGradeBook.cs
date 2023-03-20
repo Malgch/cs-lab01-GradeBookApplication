@@ -31,15 +31,15 @@ namespace GradeBook.GradeBooks
                 }
             }
 
-            if (betterStudents < twentyPercent)
-                return 'A';
-            else if (betterStudents >= twentyPercent && betterStudents < 2 * twentyPercent)
-                return 'B';
-            else if (betterStudents >= 2 * twentyPercent && betterStudents < 4 * twentyPercent)
-                return 'C';
-            else if (betterStudents >= 4 * twentyPercent && betterStudents < 6 * twentyPercent)
-                return 'D';
-            else return 'F';
+            /*            if (betterStudents < twentyPercent)
+                            return 'A';
+                        else if (betterStudents >= twentyPercent && betterStudents < 2 * twentyPercent)
+                            return 'B';
+                        else if (betterStudents >= 2 * twentyPercent && betterStudents < 4 * twentyPercent)
+                            return 'C';
+                        else if (betterStudents >= 4 * twentyPercent && betterStudents < 6 * twentyPercent)
+                            return 'D';
+                        else return 'F';*/
 
 
 /*            int numberOfStudents = Students.Count;
@@ -68,21 +68,21 @@ namespace GradeBook.GradeBooks
 
                     numberOfHigherGrades = 0; //reset counter
                 }
-            }
+            }*/
 
             if (numberOfStudents < 5)
                 throw new InvalidOperationException("Invalid operation");
 
-            else if (averageGrade >= 90)
-                return 'A';
             else if (averageGrade >= 80)
-                return 'B';
-            else if (averageGrade >= 70)
-                return 'C';
+                return 'A';
             else if (averageGrade >= 60)
+                return 'B';
+            else if (averageGrade >= 40)
+                return 'C';
+            else if (averageGrade >= 20)
                 return 'D';
 
-            else return 'F';*/
+            else return 'F';
 
         }
 
